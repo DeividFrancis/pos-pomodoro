@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <main class="bg bg-pomodoro">
+        <div class="container">
+
+            <div class="btn-container">
+                <button id="btn-pomodoro" class="btn selected">Pomodoro</button>
+                <button id="btn-short-break" class="btn">Short Break</button>
+                <button id="btn-long-break" class="btn">Long Break</button>
+            </div>
+            <div class="monitor-wrapper">
+                <svg width="500" height="500">
+                    <circle id="track" class="circle-track" r="200" cx="250" cy="250"></circle>
+                    <circle id="progress" class="circle-progress" stroke-linecap="round" r="200" cx="250" cy="250">
+                    </circle>
+                </svg>
+                <h1 class="timer-text">00:00</h1>
+            </div>
+            <h2 class="pomodoro-counter">
+                #0
+            </h2>
+            <div class="btn-container">
+                <button id="btn-start" class="btn btn-destaque">Start</button>
+                <button id="btn-stop" class="btn btn-outline" style="display: none;">Stop</button>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <audio id="timer-end" src="assets/timer-end.mp3"></audio>
+    <script src="scripts.js"></script>
+</footer>
+
+</html>
