@@ -28,7 +28,7 @@
 .bg {
     background-color: var(--color-primary);
     transition: 1s;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .btn {
@@ -52,6 +52,8 @@
     color: var(--color-primary);
     font-weight: 900;
     padding: 8px 64px;
+
+    margin-bottom: 24px;
 }
 
 .btn-outline {
@@ -67,6 +69,11 @@
     align-items: center;
 
     position: relative;
+}
+
+.svg-container {
+    width: 500px;
+    height: 500px;
 }
 
 .circle-progress {
@@ -93,4 +100,20 @@
 .pomodoro-counter {
     color: rgba(255, 255, 255, .5);
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+
+    .btn-container {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .btn {
+        margin: 8px;
+    }
+
+    .monitor-wrapper {
+        transform: scale(.7);
+    }
 }
